@@ -4,7 +4,7 @@ const keys = require('./config/keys');
 require('./models/User');
 require('./services/passport');
 
-mongoose.mongo(keys.mongoURI);
+mongoose.connect(keys.mongoURI);
 
 const app = express();
 
